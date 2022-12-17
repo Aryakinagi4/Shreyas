@@ -1,0 +1,16 @@
+<h4>Flights Available !</h4>
+
+<button type="button" (click)="shreyas(1)">Belgaum</button>
+<button type="button" class="Hubli" (click)="shreyas(2)">Hubli</button>
+<br>
+<br>
+<br>
+<div *ngIf="click else nothin">
+    {{name1}} ---- >{{source1}} ------> {{dest1}} ----> {{fare1}} {{space}}
+</div>
+<ng-template #nothin>
+
+</ng-template>
+
+
+

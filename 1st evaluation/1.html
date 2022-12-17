@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1.css">
+    <script src="1.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Baloo+Bhai+2&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section id="Hi">
+     <h1 class="title">SMART INDIA HACKATHON</h1>
+     <div class="intro">
+            <h3 class="Heading">Let us understand what Smart India Hackathon is !</h3>
+            <p class="smart">Smart India Hackathon is an all over india event where the competitions across all the domains like machine learning, 
+                Web development, Computer Networks, Web semantics etc take place.
+                Students from different Colleges across India come and show off their skills, learn new things and win different prizes.
+                It is a great opportunity for many students to build their profile to maintain their standard in today's world.
+                So don't wait go and register !
+            </p>
+     </div>
+     <button class="button button4">
+     <a href="#good">Want to register ?</a>
+    </button>
+</section>
+     <section id="good">
+    <h2 class="Welcome">Welcome to the Registration Portal</h2>
+    <form name="myForm">  
+  
+            <label> Firstname </label>         
+            <input type="text" id="firstname" size="15"/> <br> <br>  
+            <p id="ferror"></p>
+            <label> Middlename: </label>     
+            <input type="text" id="middlename" size="15"/> <br> <br>  
+            <p id="merror"></p>
+            <label> Lastname: </label>         
+            <input type="text" id="lastname" size="15"/> <br> <br> 
+            <p id="lerror"></p> 
+            
+            <label>   
+            Course :  
+            </label>   
+            <select>  
+            <option >Course</option>  
+            <option >CS</option>  
+            <option>EC</option>   
+            <option >EEE</option>  
+            <option >MECH</option>  
+            <option >CIVIL</option>  
+            <option >BIO TECH</option>  
+            </select>  
+              
+            <br>  
+            <br>  
+            <label>   
+            Gender :  
+            </label><br>  
+
+            <input type="radio" id="gender1"/> Male <br>  
+            <input type="radio" value="female" id="gender2"/> Female <br>  
+            <input type="radio" value="other" id="gender3"/> Other
+            <p id="gerror"></p>
+            <br>
+            <br>
+            <label>   
+            Phone :  
+            </label>  
+            <input type="number" id="number" value="+91" size="2"/>
+            <p id="number1"></p>
+            <br>
+            <br>
+            Address  
+            <br>  
+            <textarea cols="80" rows="5" value="address">  
+            </textarea>  
+            <br><br>  
+            Email:  
+            <input type="email" id="email" name="email" required/> <br>
+            <p id="emailid"></p>
+            <br><br>
+            Password:  
+            <input type="password" id="pass" name="pass"> <br>   
+            <p id="password"></p>
+            <br><br>
+            Re-type password:  
+            <input type="Password" id="repass" name="repass"> <br> <br>  
+            <p id="incorrect"></p> 
+            </form>  
+<button type="submit" id="btn" onclick="shreyas();">Register</button>
+<button class="button button3"><a href="#last">Move to event section !</a></button>
+<p id="users"></p>
+</section>
+<section id="last">
+<h2 class="ok">Morning Session</h2>
+<h3>Event Schedule</h3>
+<br>
+<p><span id="display"></span></p>
+<br>
+<table>
+        <tr>
+          <th>Event Name</th>
+          <th>Event Time</th>
+        </tr>
+        <tr>
+          <td>Welcome Song</td>
+          <td>8:00 am</td>
+        </tr>
+        <tr>
+          <td>Introduction</td>
+          <td>8.15 am</td>
+        </tr>
+        <tr>
+          <td>Guest Addressing</td>
+          <td>8.30 am</td>
+        </tr>
+        <tr>
+          <td>Dance to Welcome all</td>
+          <td>9.15 am</td>
+        </tr>
+        <tr>
+          <td>Event starts</td>
+          <td>9.45 am</td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <h4>------ BREAKFAST BREAK (9.45am - 10.15 am) -------</h4>
+      <br>
+   <h2>Afternoon Session</h2>
+   <h3>Event Schedule</h3>
+    <br>
+    <table>
+            <tr>
+              <th>Event Name</th>
+              <th>Event Time</th>
+            </tr>
+            <tr>
+              <td>ML competiton</td>
+              <td>10.15 am</td>
+            </tr>
+            <tr>
+              <td>CN competition</td>
+              <td>11.15 am</td>
+            </tr>
+            <tr>
+              <td>Wed Tech Competition</td>
+              <td>12.15 pm</td>
+            </tr>
+          </table>
+        <br>
+        <br>
+          <h4>------ LUNCH BREAK (12.15pm - 1.30pm) -------</h4>
+          <br>
+          <br>
+   <h2>Evening Session</h2>
+   <h3>Event Schedule</h3>
+   <br>
+   <table>
+        <tr>
+          <th>Event Name</th>
+          <th>Event Time</th>
+        </tr>
+        <tr>
+          <td>Web Semantics</td>
+          <td>1.30 pm</td>
+        </tr>
+        <tr>
+          <td>App Development</td>
+          <td>2.30 pm</td>
+        </tr>
+        <tr>
+                <td>Any FeedBack from Guests !</td>
+                <td>3.30 pm</td>
+        </tr>
+              <tr>
+                    <td>Guard of Honour!</td>
+                    <td>4.00 pm</td>
+                  </tr>
+      </table>
+      <br>
+      <br> 
+      <h4>------ TEA BREAK (4.30pm) -------</h4>
+      <br>
+      <br>
+      <h4>------ END OF DAY 1 -------</h4>
+      <br>
+      <h4>------ THE SAME SHALL BE SIMULTANEOUSLY REPEATED FOR 3 DAYS-------</h4>
+</section>
+</body>
+</html>
+
+<script>
+  let count=0;
+    function shreyas(){
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var regx = /^[6-9]\d{9}$/;
+    var regex = /^([0-9]{4}[0-9]{4}[0-9]{4}$)|([0-9]{4}\s[0-9]{4}\s[0-9]{4}$)|([0-9]{4}-[0-9]{4}-[0-9]{4}$)/;
+    let fname=document.getElementById('firstname');
+    let mname=document.getElementById('middlename');
+    let lname=document.getElementById('lastname');
+    let gender=document.getElementById('gender1');
+    let ferrpr=document.getElementById('ferror');
+    let merror=document.getElementById('merror');
+    let lerror=document.getElementById('lerror');
+    let gerror1=document.getElementById('gerror');
+    let mail=document.getElementById('email');
+    let no=document.getElementById('number');
+    if(!fname.value)
+    {   
+      ferror.innerHTML='Please Fill the firstname';
+      ferror.style.color='red';
+      return false;
+    }
+    else{
+      ferror.innerHTML='';
+    }
+    if(!lname.value)
+    {
+      lerror.innerHTML='Please Fill the lastname';
+      lerror.style.color='red';
+      return false;
+    }
+    else{
+      lerror.innerHTML='';
+    }
+    if(!gender.checked && !document.getElementById('gender2').checked && !document.getElementById('gender3').checked)
+    {
+      gerror1.innerHTML='Please select a gender';
+      gerror1.style.color='red';
+      return false;
+    }
+    else{
+      gerror1.innerHTML='';
+    }
+    if(!no.value  || !regx.test(no.value))
+    {
+      document.getElementById('number1').innerHTML='Please Enter a valid phone Number';
+      document.getElementById('number1').style.color='red';
+      return false;
+    }
+    else{
+      document.getElementById('number1').innerHTML='';
+    }
+    if(!validRegex.test(mail.value))
+    {
+      document.getElementById('emailid').innerHTML='Please enter a valid email';
+      document.getElementById('emailid').style.color='red';
+      return false;
+    }
+    else{
+      document.getElementById('emailid').innerHTML='';
+    } 
+    if(!document.getElementById('pass').value)
+    {
+      document.getElementById('password').innerHTML="Please enter a password";
+      document.getElementById('password').style.color='red';
+      return false;
+    }
+    else{
+      document.getElementById('password').innerHTML="";
+    }
+
+    if(document.getElementById('pass').value!=document.getElementById('repass').value)
+    {
+      document.getElementById('incorrect').innerHTML='Incorrect Password';
+      document.getElementById('incorrect').style.color='red';
+      return false;
+    }
+    else{
+      document.getElementById('incorrect').innerHTML='';
+    }
+    let a=document.getElementById('users');
+    count++;
+    a.innerHTML='The number of users registered are ' + count;
+}
+</script>
